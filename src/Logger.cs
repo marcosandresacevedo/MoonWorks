@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 
 namespace MoonWorks
@@ -13,7 +14,7 @@ namespace MoonWorks
 		{
 			Console.ForegroundColor = ConsoleColor.Green;
 			Console.Write("INFO: ");
-			Console.ForegroundColor = ConsoleColor.White;
+			Console.ResetColor();
 			Console.WriteLine(str);
 		}
 
@@ -21,7 +22,7 @@ namespace MoonWorks
 		{
 			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.Write("WARN: ");
-			Console.ForegroundColor = ConsoleColor.White;
+			Console.ResetColor();
 			Console.WriteLine(str);
 		}
 
@@ -29,7 +30,7 @@ namespace MoonWorks
 		{
 			Console.ForegroundColor = ConsoleColor.Red;
 			Console.Write("ERROR: ");
-			Console.ForegroundColor = ConsoleColor.White;
+			Console.ResetColor();
 			Console.WriteLine(str);
 		}
 
